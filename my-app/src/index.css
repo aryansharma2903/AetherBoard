@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.menu_container{
+  /* Positions the element relative to the nearest positioned ancestor (or to the page if none). This takes it out of normal document flow.*/
+  position: absolute;
+  /* Pins the top of the element to the top of its containing element (or page) — since it’s absolute, it sticks to the top. */
+  top: 0;
+  width: 350px;
+  /* Centers the menu horizontally on the screen:
+
+  50% moves it to the middle of the screen.
+
+  -175px shifts it back left by half of its own width. */
+  /* Net effect = perfect horizontal centering. */
+  left: calc(50% - 175px);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #EEEEEE;
+  height: 60px;
+  display: flex;
+  /* Distributes child elements evenly, with equal space before, between, and after them. */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_button {
+  width : 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+  background: #FFF1DC;
+}
+
+.menu_button:hover{
+  background-color: #E8D5C4;
+}
+
+.menu_button_active{
+  width : 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #E8D5C4;
+}
+
+/* for smooth effect */
+.cursor {
+  transition: 0.1s;
+}
