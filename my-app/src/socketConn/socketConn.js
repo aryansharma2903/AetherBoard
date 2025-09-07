@@ -11,7 +11,7 @@ let socket;
 
 export const connectWithSocketServer = () => {
     // where we can find our socket io server
-    socket = io('http://localhost:3003');
+    socket = io('https://aetherboard-nkc2.onrender.com/');
 
     // establishing connection of client with server
     socket.on("connect", () => {
